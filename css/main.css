@@ -1,0 +1,512 @@
+.body {
+  overflow-x: hidden !important;
+  overflow: scroll;
+  width: 100%;
+  font: 15px "Century Gothic", "Times Roman", sans-serif;
+  background: #eee;
+  min-height: 1000px;
+  background-attachment: scroll;
+  line-height: 1.35;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.bg {
+  min-height: 540px;
+}
+
+.bg1 {
+  background: url(../image/13.png);
+  background-size: cover;
+  background-position: center center;
+  min-height: 540px;
+}
+
+.bg2 {
+  background: url(../image/14.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+
+.bg3 {
+  background: url(../image/15.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+
+.bg4 {
+  background: url(../image/icn2.jpg);
+  background-size: cover;
+  max-width: 100%;
+  min-height: 540px;
+}
+
+
+.panel {
+
+  margin: 40px;
+  padding: 20px;
+  font: 15px "Century Gothic", "Times Roman", sans-serif;
+}
+
+.panel {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.panel2 {
+  background: url(../image/16.png);
+  background-size: cover;
+  background-position: center center;
+  margin: 40px;
+
+}
+
+
+.panel3 {
+  border-color: #eee;
+  margin: 20px;
+  padding: 10px;
+  font: 20px "Century Gothic", "Times Roman", sans-serif;
+}
+
+.panel4 {
+
+  margin: 20px;
+  padding: 20px;
+  font: 20px "Century Gothic", "Times Roman", sans-serif;
+}
+
+.panel5 {
+  background: url(../image/icn2.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  padding: 20px;
+  font: 20px "Century Gothic", "Times Roman", sans-serif;
+}
+
+
+.title {
+  font-family: "times roman";
+}
+
+.header {
+  background: #202020;
+  height: 60px;
+}
+
+.logo {
+  font-family:
+    /*"Objectis"; Bu alternatif logo*/
+    /*"OriginTech"; alternatif logo 2*/
+    /*"Abnes"; bu logo için olabilir*/
+    /*"Techno Hideo"; tam logoya uygun */
+    "Varino";
+  /* "Varino"; Şuan ki logo fontu*/
+
+  font-size: 45px;
+  color: #e2e2e2;
+  margin: 15px;
+}
+
+.title1 {
+  font: 16px 'Bruno Ace SC',
+    cursive;
+  line-height: 1.50;
+}
+
+.title2 {
+  font-family: "Times Roman";
+  font-size: 20px;
+  line-height: 1.50;
+}
+
+.title3 {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 20px;
+  height: calc(50vh - 100px);
+  text-align: center;
+}
+
+.title4 {
+  font-family: "Times Roman";
+  font-size: 20px;
+  height: calc(50vh - 100px);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+
+}
+
+.container4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+.sub1 {
+  color: #fff;
+  font-size: 15px;
+  height: 35px;
+  margin: 13px;
+  /*padding: -10px;*/
+
+}
+
+.sub {
+  width: 100%;
+  /* background-color: #c82333; */
+  color: white;
+  padding: 2px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.sub1:hover {
+  color: #0066CC;
+}
+
+.footer {
+  font-size: 15px;
+  text-align: center;
+  border-top: 1px solid;
+  border-color: #323232;
+  background-color: #202020;
+  margin-right: 0 !important;
+}
+
+.footer a {
+  margin: 25px;
+  color: #fff;
+  text-decoration: none;
+  font: 15px 'Bruno Ace SC',
+    cursive;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #0066CC;
+  border-top: 2px solid;
+  border-color: #0066CC;
+}
+
+.box {
+  padding: 9px;
+
+}
+
+hr {
+  color: #000000;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+.log1 {
+  font: 11px "Ubuntu", sans-serif;
+  color: #e2e2e2;
+  margin-left: 10px;
+}
+
+.log {
+  margin: 10px;
+  margin-right: 60px;
+  margin-left: 5px;
+  color: #e2e2e2;
+  text-decoration: none;
+  font-size: 20px;
+  font-size: 15px;
+}
+
+.log:hover {
+  color: #838288;
+  border-top: 2px solid;
+  border-color: #e2e2e2;
+  text-decoration: none;
+}
+
+.mymodal {
+  line-height: 1.35;
+}
+
+
+/*CARD*/
+/* Kapaklı kart kabı - genişliği ve yüksekliği istediğiniz gibi ayarlayın. Fareyle üzerine gelindiğinde 
+çevirmenin kendisinin kutunun dışına çıktığını göstermek için border özelliğini ekledik 
+(3B efektini istemiyorsanız perspektifi kaldırın) */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 170px;
+
+  perspective: 10000px;
+  /* 3B efekt */
+
+  flex: 0 0 30%;
+  /* blokların yüzde kaçlık genişlikte olacağını belirler */
+
+  max-width: 200px;
+
+  overflow: hidden;
+
+}
+
+/* Bu konteyner ön ve arka tarafı konumlandırmak için gereklidir */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+/* Fareyi çevirme kutusu kabının üzerine getirdiğinizde yatay bir çevirme yapın */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Ön ve arka tarafı konumlandırın */
+.flip-card-front1,
+.flip-card-front2,
+.flip-card-front3,
+.flip-card-front4,
+.flip-card-front5,
+.flip-card-front6,
+.flip-card-back1,
+.flip-card-back2,
+.flip-card-back3,
+.flip-card-back4,
+.flip-card-back5,
+.flip-card-back6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Ön tarafa stil ver (resim eksikse yedek) */
+.flip-card-front1,
+.flip-card-front2,
+.flip-card-front3,
+.flip-card-front4,
+.flip-card-front5 {
+  background: url(../image/17.png);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Arka tarafa stil ver */
+.flip-card-back1,
+.flip-card-back2,
+.flip-card-back3,
+.flip-card-back4,
+.flip-card-back5,
+.flip-card-back6 {
+  background: url(../image/18.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.cards-items {
+  text-align: center;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+.giris-input {
+  background-color: white !important;
+  color: #000000 !important;
+}
+
+.giris-input::placeholder {
+  color: #000000 !important;
+}
+
+.modal-background {
+  background: url(../image/icn2.jpg);
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.option-css {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .flip-card {
+    flex: 0 0 45%;
+    /* tabletlerde blokların yüzde kaçlık genişlikte olacağını belirler */
+  }
+}
+
+@media (max-width: 576px) {
+  .flip-card {
+    flex: 0 0 100%;
+    /* telefonlarda blokların yüzde kaçlık genişlikte olacağını belirler */
+  }
+}
+
+.quiz-timer-box {
+  position: fixed;
+  top: 75px;
+  left: 100px;
+  width: 300px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.quiz-timer-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.quiz-timer {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: red;
+}
+
+.container4 {
+  overflow: hidden;
+}
+
+.bg5 {
+  min-height: 250px;
+}
+
+.title5 {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 10px;
+  text-align: center;
+}
+
+.bg6 {
+  min-height: 20px;
+}
+
+.title6 {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 5px;
+  text-align: center;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.scrolling-wrapper img {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 150px;
+  margin-right: 25px;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-200px * 5 - 20px * 4));
+  }
+}
+
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  height: 175px;
+}
+
+.faq-box h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #224184;
+}
+
+.faq-box p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.faq-box a {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.faq-box a:hover {
+  text-decoration: underline;
+}

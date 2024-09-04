@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cell</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>Cell</h1>
+<code>Cell(<b>float</b> w [, <b>float</b> h [, <b>string</b> txt [, <b>mixed</b> border [, <b>int</b> ln [, <b>string</b> align [, <b>boolean</b> fill [, <b>mixed</b> link]]]]]]])</code>
+<h2>Tanımlama</h2>
+Hücreyi çerçeveli, arka plan renkli ve içi yazılı seçenekli olarak yazdırır (dikdörtgen bir alan olarak).
+Sol üst köşe başlangıç pozisyonu olarak belirlenir. İçine yazılan yazı sağa, sola ve ortalanmış şekilde seçilebilir. Çağırıldıktan sonra, geçerli pozisyon ilerler yada yeni bir satır olarak devam eder. Yazı üzerine körü eklemek te mümkündür.
+<br>
+Eğer otomatik sayfa ekleme özelliği açıksa ve yazı limitleri geçecek bir büyüklükte ise önce yeni sayfa çağırılır daha sonra yazı yazdırılır.
+<h2>Parametre</h2>
+<dl class="param">
+<dt><code>w</code></dt>
+<dd>
+Hücre genişliği. Eğer <code>0</code> ise, hücre sayfanın sağına kada uzatılır.
+</dd>
+<dt><code>h</code></dt>
+<dd>
+Hücre yüksekliği.
+Geçerli değeri: <code>0</code>.
+</dd>
+<dt><code>txt</code></dt>
+<dd>
+Yazdırılacak yazı.
+Geçerli değer: boş yazı.
+</dd>
+<dt><code>border</code></dt>
+<dd>
+Hücrenin çevresinde çerçeve gösterilmesi. Değer aşağıdakiler gibidir:
+<ul>
+<li><code>0</code>: çerçevesiz
+<li><code>1</code>: çerçeveli
+</ul>
+yada hücrenin istenilen yerlerinde çizgi gösterilmesi sağlanabilir (sırası önemsiz):
+<ul>
+<li><code>L</code>: sol
+<li><code>T</code>: üst
+<li><code>R</code>: sağ
+<li><code>B</code>: alt
+</ul>
+Geçerli değer: <code>0</code>.
+</dd>
+<dt><code>ln</code></dt>
+<dd>
+Geçerli pozisyonu method çağırıldıktan sonra belirler. Olası değerler:
+<ul>
+<li><code>0</code>: sağına
+<li><code>1</code>: bir sonraki satırın başlangıcına
+<li><code>2</code>: üstüne
+</ul>
+<code>1</code> yazmak, <code>0</code> yazmak ve  Ln() ifadesinin hemen sonrasında çağırılması ile aynı anlama gelir.
+Geçerli değer: <code>0</code>.
+</dd>
+<dt><code>align</code></dt>
+<dd>
+Yazının hücreye göre yerini belirlemek için kullanılır. Olası değerler:
+<ul>
+<li><code>L</code> veya boş ifade: sola dayalı (geçerli değer olarak kullanılır)
+<li><code>C</code>: ortalanmış
+<li><code>R</code>: sağa dayalı
+</ul>
+</dd>
+<dt><code>fill</code></dt>
+<dd>
+Hücre arkasının renklendirilmesini (<code>true</code>) veya transparan kalmasını (<code>false</code>) belirler.
+Geçerli değer: <code>false</code>.
+</dd>
+<dt><code>link</code></dt>
+<dd>
+URL veya tanımlayıcı AddLink() ile kullanılır.
+</dd>
+</dl>
+<h2>Örnek</h2>
+<div class="doc-source">
+<pre><code>// Yazı tipini ata
+$pdf-&gt;SetFont('Arial','B',16);
+// 8 cm sağa git
+$pdf-&gt;Cell(80);
+// 20*10 mm hücre ve satır boşluğu ile ortalanmış yazıyı yaz
+$pdf-&gt;Cell(20,10,'BASLIK',1,1,'C');</code></pre>
+</div>
+<h2>Bunlara da bakın</h2>
+<a href="setfont.htm">SetFont()</a>,
+<a href="setdrawcolor.htm">SetDrawColor()</a>,
+<a href="setfillcolor.htm">SetFillColor()</a>,
+<a href="settextcolor.htm">SetTextColor()</a>,
+<a href="setlinewidth.htm">SetLineWidth()</a>,
+<a href="addlink.htm">AddLink()</a>,
+<a href="ln.htm">Ln()</a>,
+<a href="multicell.htm">MultiCell()</a>,
+<a href="write.htm">Write()</a>,
+<a href="setautopagebreak.htm">SetAutoPageBreak()</a>.
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">İçindekiler</a></div>
+</body>
+</html>

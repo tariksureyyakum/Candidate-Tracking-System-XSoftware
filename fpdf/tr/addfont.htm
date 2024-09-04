@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AddFont</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>AddFont</h1>
+<code>AddFont(<b>string</b> family [, <b>string</b> style [, <b>string</b> file]])</code>
+<h2>Tanımlama</h2>
+TrueType, OpenType veya Type1 fontlarını ekleyip kullanılmasını sağlar. Öncelikle font tanımlama
+dosyasını makefont.php aracıyla tanımlamak gereklidir.
+<br>
+Tanımlama dosyası (ve gömülü hale getirilen font dosyası) font dizini içerisinde bulunmalıdır.
+Eğer bulunmazsa, "Could not include font definition file" (font tanımlama dosyası eklenemiyor)
+hatası oluşur.
+<h2>Parametre</h2>
+<dl class="param">
+<dt><code>family</code></dt>
+<dd>
+Font ailesi. İsim istenildiği gibi seçilebilir. Eğer standart bir aile ismi seçilirse,
+o isimdeki font üzerine yazılır.
+</dd>
+<dt><code>style</code></dt>
+<dd>
+Font stili. Olası değerler (büyük/küçük harf duyarlı):
+<ul>
+<li>salt kelime: regular
+<li><code>B</code>: kalın
+<li><code>I</code>: eğik
+<li><code>BI</code> veya <code>IB</code>: kalın eğik
+</ul>
+Geçerli değeri regular dir.
+</dd>
+<dt><code>file</code></dt>
+<dd>
+Font tanımlama dosyası.
+<br>
+Geçerli olarak, isim, küçük karakterlerle ve boşluksuz olarak aile ve stile göre yapılır.
+</dd>
+</dl>
+<h2>Örnek</h2>
+<div class="doc-source">
+<pre><code>$pdf-&gt;AddFont('Comic','I');</code></pre>
+</div>
+ile aşağıdaki aynıdır:
+<div class="doc-source">
+<pre><code>$pdf-&gt;AddFont('Comic','I','comici.php');</code></pre>
+</div>
+<h2>Bunlara da bakın</h2>
+<a href="setfont.htm">SetFont()</a>.
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">İçindekiler</a></div>
+</body>
+</html>

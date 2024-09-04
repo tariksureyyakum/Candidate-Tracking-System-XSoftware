@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v4/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+@font-face {
+  font-family: "typo";
+  src: url("../fonts/typo.ttf");
+}
+
+@font-face {
+  font-family: "gothic";
+  src: url("../fonts/gothics.ttf");
+}
+
+@font-face {
+  font-family: "Space Age";
+  src: url("../fonts/space-age.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Moonhouse";
+  src: url("../fonts/moonhouse.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Abnes";
+  src: url("../fontfamily2/abnes/abnes.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Objectis";
+  src: url("../fontfamily2/objectis/Objectis.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OriginTech";
+  src: url("../fontfamily2/origin_tech/OriginTech\ personal\ use.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Techno Hideo";
+  src: url("../fontfamily2/techno_hideo/techno_hideo.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Varino";
+  src: url("../fontfamily2/varino/Varino\ -\ Normal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(../fonts/glyphicons-halflings-regular.eot);
+  src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MultiCell</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>MultiCell</h1>
+<code>MultiCell(<b>float</b> w, <b>float</b> h, <b>string</b> txt [, <b>mixed</b> border [, <b>string</b> align [, <b>boolean</b> fill]]])</code>
+<h2>Tanımlama</h2>
+Bu method yazıları satır boşlukları ile yazdırılması için kullanılır. Otomatik olarak kullanılabileceği gibi (yazı hücre sonuna eriştiğinde) istenildiği zaman da (\n karakteri ile) kullanılabilir. Birden fazla hücre gerektiğinde biri diğerinin üstüne gelir.her.
+<br>
+Yazı sağa dayalı, sola dayalı veya ortalanmış olarak yazılabilir. Hücre bloğu çerçeveli ve arkaplan renkli olarak kullanılabilir.
+<h2>Parametre</h2>
+<dl class="param">
+<dt><code>w</code></dt>
+<dd>
+Hücre genişliği. Eğer <code>0</code> ise, sayfanın sağ marjinine kadar uzar.
+</dd>
+<dt><code>h</code></dt>
+<dd>
+Hücre yüksekliği.
+</dd>
+<dt><code>txt</code></dt>
+<dd>
+Yazı.
+</dd>
+<dt><code>border</code></dt>
+<dd>
+Hücrenin çevresinde çerçeve gösterilmesi. Değer aşağıdakiler gibidir:
+<ul>
+<li><code>0</code>: çerçevesiz
+<li><code>1</code>: çerçeveli
+</ul>
+yada hücrenin istenilen yerlerinde çizgi gösterilmesi sağlanabilir (sırası önemsiz):
+<ul>
+<li><code>L</code>: sol
+<li><code>T</code>: üst
+<li><code>R</code>: sağ
+<li><code>B</code>: alt
+</ul>
+Geçerli değer: <code>0</code>.
+</dd>
+<dt><code>align</code></dt>
+<dd>
+Yazının hücreye göre yerini belirlemek için kullanılır. Olası değerler:
+<ul>
+<li><code>L</code> veya boş ifade: sola dayalı (geçerli değer olarak kullanılır)
+<li><code>C</code>: ortalanmış
+<li><code>R</code>: sağa dayalı
+</ul>
+</dd>
+<dt><code>fill</code></dt>
+<dd>
+Hücre arkasının renklendirilmesini (<code>true</code>) veya transparan kalmasını (<code>false</code>) belirler.
+Geçerli değer: <code>false</code>.
+</dd>
+</dl>
+<h2>Bunlara da bakın</h2>
+<a href="setfont.htm">SetFont()</a>,
+<a href="setdrawcolor.htm">SetDrawColor()</a>,
+<a href="setfillcolor.htm">SetFillColor()</a>,
+<a href="settextcolor.htm">SetTextColor()</a>,
+<a href="setlinewidth.htm">SetLineWidth()</a>,
+<a href="cell.htm">Cell()</a>,
+<a href="write.htm">Write()</a>,
+<a href="setautopagebreak.htm">SetAutoPageBreak()</a>.
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">İçindekiler</a></div>
+</body>
+</html>

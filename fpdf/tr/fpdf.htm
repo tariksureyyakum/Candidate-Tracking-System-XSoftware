@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FPDF</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>FPDF</h1>
+<code>FPDF([<b>string</b> orientation [, <b>string</b> unit [, <b>mixed</b> size]]])</code>
+<h2>Tanımlama</h2>
+Bu taşıyıcı classtır. Sayfa düzenin belirlenmesini sağlar.Tüm methodlarda ölçü birimi ve yerleşim yerleri çağırılarak kullanılmalıdır (yazı tipi boyutları hariç).
+<h2>Parametre</h2>
+<dl class="param">
+<dt><code>orientation</code></dt>
+<dd>
+Geçerli sayfa yapısı. Geçerli değerler (büyük harf duyarsız):
+<ul>
+<li><code>P</code> veya <code>Dikey</code>
+<li><code>L</code> veya <code>Yatay</code>
+</ul>
+Geçerli değer <code>P</code>.
+</dd>
+<dt><code>unit</code></dt>
+<dd>
+Kullanıcı ölçüsü. Geçerli değerler:
+<ul>
+<li><code>pt</code>: nokta
+<li><code>mm</code>: milimetre
+<li><code>cm</code>: santimetre
+<li><code>in</code>: inç
+</ul>
+Bir nokta 1/72 inç, yaklaşık 0.35 mm (1 inç, 2.54 cm dir). Bu yaygın olarak kullanılan ölçü birimleridir; Yazı tipi büyüklükleri de bunlara göre tanımlanmalıdır.
+<br>
+<br>
+Geçerli değer <code>mm</code> dir.
+</dd>
+<dt><code>size</code></dt>
+<dd>
+Size parametresi sayfa tanımlaması için kullanılır. Aşağıdaki değerlerden biri olabilir (büyük harf duyarsız):
+<ul>
+<li><code>A3</code>
+<li><code>A4</code>
+<li><code>A5</code>
+<li><code>Letter</code>
+<li><code>Legal</code>
+</ul>
+yada özel tanımlanabilir. Genişlik ve yükseklik değerini içeren iki elemanlı bir dizi olarak belirtilebilir.
+(unit parametresinde tanımlanan birime göre seçilmelidir. <code>unit</code>).<br>
+<br>
+Geçerli değer <code>A4</code>.
+</dd>
+</dl>
+<h2>Örnek</h2>
+Örnek olarak, kullanıcı tarafından belirlenen 100x150 mm sayfa formatı:
+<div class="doc-source">
+<pre><code>$pdf = new FPDF('P','mm',array(100,150));</code></pre>
+</div>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">İçindekiler</a></div>
+</body>
+</html>

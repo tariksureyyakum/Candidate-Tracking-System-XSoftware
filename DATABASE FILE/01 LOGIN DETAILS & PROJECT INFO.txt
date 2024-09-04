@@ -1,0 +1,20 @@
+**Database Name: xsoftware**
+
+**Developed by Tarik Sureyya Kum**
+
+
+
+**Student Login Details**
+
+Email   : tsureyyakum@gmail.com 
+Password: 123123
+
+Email   : yc.yusufcavdar@gmail.com 
+Password: 123123
+
+
+
+**Admin Login Details**
+
+Email    : xs.xsoftware@gmail.com
+Password : 199835

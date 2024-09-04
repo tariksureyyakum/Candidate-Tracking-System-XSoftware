@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Image</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>Image</h1>
+<code>Image(<b>string</b> file [, <b>float</b> x [, <b>float</b> y [, <b>float</b> w [, <b>float</b> h [, <b>string</b> type [, <b>mixed</b> link]]]]]])</code>
+<h2>Tanımlama</h2>
+Sayfaya imaj eklemek için kullanılır. Boyutlu farklı şekillerde belirlenebilir:
+<ul>
+<li>genişlik ve yükseklik olarak (kullanıcı birimi şeklinde yada dpi cinsinden)</li>
+<li>tek kenar uzunluğunu tanımlayarak. Bu durumda diğer kenar orantısal olarak hesaplanarak belirlenir.</li>
+<li>belirli bir boyut tanımlanmazsa, imaj çözünürlüğünün 96 dpi olduğu durumlarda.</li>
+</ul>
+Desteklenen imaj formatları JPEG, PNG ve GIF dir. GD eklentisi GIF'e ihtiyaç duyar.
+<br>
+<br>
+JPEG için tüm çeşitlere izin verilmektedir:
+<ul>
+<li>siyah beyaz</li>
+<li>gerçek renk (24 bit)</li>
+<li>CMYK (32 bit)</li>
+</ul>
+PNG için izin verilenler:
+<ul>
+<li>en çok 8 bitlik (256 renk) siyah beyaz</li>
+<li>indexed color</li>
+<li>gerçek renk (24 bit)</li>
+</ul>
+GIF için: Animasyonlu bir GIF kullanılıyorsa, sadece ilk görüntü kullanılır.<br>
+<br>Transparanlık desteklenmektedir<br>
+<br>
+Format belirtilebileceği gibi, dosya uzantısından da belirlenebilir.<br>
+<br>
+Imaj üzerine köprü koymak ta mümkündür.<br>
+<br>
+Hatırlatma: eğer imaj bir dosya içerisinde birden fazla kullanılıyorsa dosyaya sadece bir kez eklenir.
+<h2>Parametre</h2>
+<dl class="param">
+<dt><code>file</code></dt>
+<dd>
+Imaj dosyasının adı.
+</dd>
+<dt><code>x</code></dt>
+<dd>
+Sol üst köşenin x ekseni. Eğer tanımlanmazsa yada <code>null</code> girilirse, geçerli olan x koordinatı kullanılır.
+</dd>
+<dt><code>y</code></dt>
+<dd>
+Sol üst köşenin y ekseni. Eğer tanımlanmazsa yada <code>null</code> girilirse, geçerli olan y koordinatı kullanılır. Bunun yanında eğer sayfa bitirme fonksiyonu kullanılması gerekirse (otomatik sayfalama devrede ise de geçerli). Bu fonksiyon çağarıldığınca öncelikle sayfa ayırma sonra koordinat sayfanın en altı olarak atanır.
+</dd>
+<dt><code>w</code></dt>
+<dd>
+Imajın sayfa içerisindeki genişliği. Üç durumu vardır:
+<ul>
+<li>Eğer değer pozitif ise, kullanıcı birimindeki genişliği temsil eder.</li>
+<li>Eğer değer negated ise, kesin değer dikey çözünürlüğü dpi olarak ifade eder.</li>
+<li>Eğer belirtilmezse yada 0 girilirse otomatik olarak hesaplanır</li>
+</ul>
+</dd>
+<dt><code>h</code></dt>
+<dd>
+Imajın sayfa içerisindeki yüksekliği. Üç durumu vardır:
+<ul>
+<li>Eğer değer pozitif ise, kullanıcı birimindeki yüksekliği temsil eder.</li>
+<li>Eğer değer negative ise, kesin değer dikey çözünürlüğü dpi olarak ifade eder.</li>
+<li>Eğer belirtilmezse yada 0 girilirse otomatik olarak hesaplanır</li>
+</ul>
+</dd>
+<dt><code>type</code></dt>
+<dd>
+Imaj formatı. Olası değerler (büyük harf duyarsız): <code>JPG</code>, <code>JPEG</code>, <code>PNG</code> ve <code>GIF</code>.
+Eğer belirtilmezse, dosya uzantısına göre belirlenir.
+</dd>
+<dt><code>link</code></dt>
+<dd>
+URL veya AddLink() ten dönen tanımlayıcı.
+</dd>
+</dl>
+<h2>Örnek</h2>
+<div class="doc-source">
+<pre><code>// 300 dpi çözünürlüğündeki logonun sol üst köşeye eklenmesi
+$pdf-&gt;Image('logo.png',10,10,-300);
+// URL den dinamik imaj eklenmesi
+$pdf-&gt;Image('http://chart.googleapis.com/chart?cht=p3&amp;chd=t:60,40&amp;chs=250x100&amp;chl=Hello|World',60,30,90,0,'PNG');</code></pre>
+</div>
+<h2>Bunlara da bakın</h2>
+<a href="addlink.htm">AddLink()</a>.
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">İçindekiler</a></div>
+</body>
+</html>

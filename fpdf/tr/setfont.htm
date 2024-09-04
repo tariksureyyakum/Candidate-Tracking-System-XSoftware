@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SetFont</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>SetFont</h1>
+<code>SetFont(<b>string</b> family [, <b>string</b> style [, <b>float</b> size]])</code>
+<h2>Tanımlama</h2>
+Yazıda kullanılacak olan yazı tipini belirlemek için kullanılır. Yazı yzaılmadan önce yazı tipinin tanımlanması zorunludur. Tanımlanmaması durumunda output() ile çıktı oluşturma aşamasında hata mesajı alınır.
+<br>
+Yazı tipi standart olanlardan kullanılabileceği gibi AddFont() methodu ile tanımlanmış olanlar da kullanılabilir. Standart yazı tipleri Windows için olan cp1252 Batı Avrupa (Western Europe) yazı dipleridir.
+<br>
+Method ilk sayfa oluşturulduktan sonra kullanılabilir. Seçilen font oluşturulacak olan sonraki sayfalardada kullanılır.
+<br>
+Eğer sadece yazı boyutunu değiştirmek isterseniz, SetFontSize()'i çağırarak bunu yapabilirsiniz.
+<br>
+<br>
+<strong>Not:</strong> yazıtipi ölçü dosyalar erişilebilir olmalıdır. Nerelerde olacağı şu şekilde belirlenir:
+<ul>
+<li><code>FPDF_FONTPATH</code> sabiti ile tanımlanmış dizin (eğer tanımlandıysa)
+<li><code>fpdf.php</code> içersinde tanımlanmış <code>font</code> dizini (eğer mevcutsa)
+<li><code>include()</code> ile eklenen erişilebilir dizinler
+</ul>
+Örnek <code>FPDF_FONTPATH</code> tanımalaması:
+<div class="doc-source">
+<pre><code>define('FPDF_FONTPATH','/home/www/font');
+require('fpdf.php');</code></pre>
+</div>
+Eğer eklenecek yazıtipi bulunamaz ise, hata olarak: "Could not include font definition file" mesajı
+ile karşılaşırsınız.
+<h2>Parametre</h2>
+<dl class="param">
+<dt><code>family</code></dt>
+<dd>
+Yazıtipi ailesi. AddFont() ile tanımlanmış aile isimleri olabileceği gibi ön tanımlı olarak gelen standart aile isimleri de kullanılabilir (büyük harf duyarsız):
+<ul>
+<li><code>Courier</code> (sabit genişlik)
+<li><code>Helvetica</code> veya <code>Arial</code> (eşanlamlı; sans serif)
+<li><code>Times</code> (serif)
+<li><code>Symbol</code> (symbolic)
+<li><code>ZapfDingbats</code> (symbolic)
+</ul>
+Boş değer de göndermek mümkündür. Bu durumda, geçerli olan aile korunacaktır.
+</dd>
+<dt><code>style</code></dt>
+<dd>
+Yazıtipi stili. Olası değerler (büyük harf duyarsız):
+<ul>
+<li>boş kelime: sıradan
+<li><code>B</code>: koyu
+<li><code>I</code>: eğik
+<li><code>U</code>: altı çizili
+</ul>
+veya her türlü kombinasyonu. Geçerli olan değer sıradandır.
+Koyu ve eğik stilleri <code>Symbol</code> ve <code>ZapfDingbats</code> a uygulamayın.
+</dd>
+<dt><code>size</code></dt>
+<dd>
+Nokta cinsinden yazıtipi boyutu.
+<br>
+Geçerli olan değer önceden tanımlanmış olandır. Eğer dökümanın başından itibaren bir değer tanımlanmamış işse bu durumda geçerli olan değer 12 olarak belirlenir.
+</dd>
+</dl>
+<h2>Örnek</h2>
+<div class="doc-source">
+<pre><code>// Times sıradan 12
+$pdf-&gt;SetFont('Times');
+// Arial koyu 14
+$pdf-&gt;SetFont('Arial','B',14);
+// Koyuluğu kaldır
+$pdf-&gt;SetFont('');
+// Times koyu, eğik ve altı çizili 14
+$pdf-&gt;SetFont('Times','BIU');</code></pre>
+</div>
+<h2>Bunlara da bakın</h2>
+<a href="addfont.htm">AddFont()</a>,
+<a href="setfontsize.htm">SetFontSize()</a>,
+<a href="cell.htm">Cell()</a>,
+<a href="multicell.htm">MultiCell()</a>,
+<a href="write.htm">Write()</a>.
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">İçindekiler</a></div>
+</body>
+</html>

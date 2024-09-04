@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SetDisplayMode</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>SetDisplayMode</h1>
+<code>SetDisplayMode(<b>mixed</b> zoom [, <b>string</b> layout])</code>
+<h2>Tanımlama</h2>
+Döküman göstericisi için görüntü modu belirlemekte kullanılır. Yakınlık derecesi tanımlanır.
+Sayfalar ekranı kaplayacak şekilde, genişlik ekrana sığacak şekilde, gerçek renklerinde, belirli
+bir yakınlaştırma oranında veya gösterici öntanımlı (Adobe Reader için Ayarlar menüsünden
+ayarlanabilir) şekilde gösterilebilir. Sayfa düzenini de buradan şu değerlere göre ayarlayabilirsiniz:
+Tek gösterimli, sürekli gösterim, iki kolon görünümlü yada gösterci öntanımlı.
+<h2>Parametre</h2>
+<dl class="param">
+<dt><code>zoom</code></dt>
+<dd>
+Kullanılacak yakınlık. Aşağıdaki kelime değerlerinden biri olmalıdır:
+<ul>
+<li><code>fullpage</code>: Tüm sayfayı ekrana sığacak şekilde gösterir
+<li><code>fullwidth</code>: Pencerinin genişliğine maksimum oturacak şekilde
+<li><code>real</code>: gerçek boyutu kullanır (100% yakınlaştırma ile aynıdır)
+<li><code>default</code>: gösterici öntanımlı değerine göre gösterir
+</ul>
+veya yakınlık derecesini numara olarak ifade eden bir değer.
+</dd>
+<dt><code>layout</code></dt>
+<dd>
+Sayfa yapısı. Olası değerler:
+<ul>
+<li><code>single</code>: her seferinde bir sayfa gösterir
+<li><code>continuous</code>: sayfaları sürekli form olarak gösterir
+<li><code>two</code>: iki sayfayı iki kolon olarak gösterir
+<li><code>default</code>: gösterici öntanımlı değerine göre gösterir
+</ul>
+Geçerli olan değer <code>default</code> tur.
+</dd>
+</dl>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">İçindekiler</a></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AddPage</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>AddPage</h1>
+<code>AddPage([<b>string</b> orientation [, <b>mixed</b> size]])</code>
+<h2>Tanımlama</h2>
+Dökümana yeni bir sayfa ekler. Eğer sayfa mevcutsa, Footer() öncelikli olarak çağırılır ve sayfaye eklenir. Daha sonra sayfa eklenir, geçerli olan pozisyon sayfanın sol üst köşesi olarak belirlenir ve Header() başlığın görüntülenmesi için çağırılır..
+<br>
+Daha önceden belirlenmiş olan karakter tipi otomatik olarak çağırılır.
+Eğer aynı font ile devam etmek istiyorsanız SetFont()'u tekrar çağırmanıza gerek yoktur. Aynı durum renkler ve çizgi tanımlamaları için de geçerlidir.
+<br>
+Koordinat sisteminin merkez noktası sol üst köşedir ve yazıldıkça aşağıya doğru ilerler.
+<h2>Parametre</h2>
+<dl class="param">
+<dt><code>orientation</code></dt>
+<dd>
+Sayfa yapısı. Alabileceği değerler (büyük harf duyarsız):
+<ul>
+<li><code>P</code> or <code>Dik</code></li>
+<li><code>L</code> or <code>Yatay</code></li>
+</ul>
+Geçerli olan değer ilkidir.
+</dd>
+<dt><code>size</code></dt>
+<dd>
+Sayfa boyutu. Aşağıdaki değerlerden biri olabilir (büyük-küçük harf duyarlı):
+<ul>
+<li><code>A3</code></li>
+<li><code>A4</code></li>
+<li><code>A5</code></li>
+<li><code>Mektup</code></li>
+<li><code>Legal</code></li>
+</ul>
+ya da eni ve boyu kullanıcı tarafından tanımlanmış bir boyut ta olabilir (kullanıcı birimi bölümünde açıklanmıştır).<br>
+<br>
+Geçerli değer taşıyıcıya iletilir.
+</dd>
+</dl>
+<h2>Bunlara da bakın</h2>
+<a href="fpdf.htm">FPDF()</a>,
+<a href="header.htm">Header()</a>,
+<a href="footer.htm">Footer()</a>,
+<a href="setmargins.htm">SetMargins()</a>.
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">İçindekiler</a></div>
+</body>
+</html>
